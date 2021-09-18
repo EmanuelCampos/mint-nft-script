@@ -19,14 +19,14 @@ const run = async () => {
 
   const wallet = new ethers.Wallet(privateKey, provider);
 
-  const web3PlayNftContract = new ethers.Contract(
+  const factoryNFTContract = new ethers.Contract(
     FactoryNFTAddress,
     FactoryNFT.abi,
     wallet
   );
 
   console.log("minting");
-  const transaction = await web3PlayNftContract.createToken(tokenUri);
+  const transaction = await factoryNFTContract.createToken(tokenUri);
   const tx = await transaction.wait();
   const event = tx.events[0];
   const value = event.args[2];
