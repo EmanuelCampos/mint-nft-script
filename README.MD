@@ -2,7 +2,7 @@
 
 ## :computer: About the project
 
-this project was made to mint NFTS directly by CLI, to facilitate the development, testing or even the registration of NFTS.
+This project was made to mint NFTS directly by CLI, to facilitate the development, testing or even the registration of NFTS.
 
 ## How To Run
 
