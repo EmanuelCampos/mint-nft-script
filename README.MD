@@ -14,6 +14,8 @@ yarn install
 
 Now configure your `.env` with the required variables
 
+> Use your private key very carefully, because it is extremely secret.
+
 ```env
 CONTRACT_ADDRESS= // deployed contract Address
 DEPLOYER_PRIVATE_KEY= // to mint by your address
@@ -22,6 +24,8 @@ INFURA_PROJECT_ID= // your infura project id, you can see my article to do
 ```
 
 Run the command to mint the NFT
+
+> the tokenURI is the url where your NFT metadata is hosted.
 
 ```bash
 yarn es ./src/mintNft <privatekey> <tokenuri>
